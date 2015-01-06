@@ -1,0 +1,38 @@
+﻿已經開始建置於 2015/1/6 下午 04:08:05。
+     1>節點 2 (Build 目標) 上的專案 "C:\Users\TC\Source\Repos\test\EarlyFireDetection\EarlyFireDetection\EarlyFireDetection.vcxproj"。
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt colorModel.cpp ds.cpp fileStream.cpp fireBehaviorAnalysis.cpp main.cpp motionDetection.cpp opticalFlowTool.cpp
+         opticalFlowTool.cpp
+     1>c:\opencv2.4.10\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>c:\opencv2.4.10\build\include\opencv2\legacy\compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+         motionDetection.cpp
+     1>c:\opencv2.4.10\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>c:\opencv2.4.10\build\include\opencv2\legacy\compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+         main.cpp
+     1>c:\opencv2.4.10\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>c:\opencv2.4.10\build\include\opencv2\legacy\compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+         fireBehaviorAnalysis.cpp
+     1>c:\opencv2.4.10\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>c:\opencv2.4.10\build\include\opencv2\legacy\compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+         fileStream.cpp
+     1>c:\opencv2.4.10\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>c:\opencv2.4.10\build\include\opencv2\legacy\compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+         ds.cpp
+     1>c:\opencv2.4.10\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>c:\opencv2.4.10\build\include\opencv2\legacy\compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+         colorModel.cpp
+         正在產生程式碼...
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\TC\Source\Repos\test\EarlyFireDetection\Debug\EarlyFireDetection.exe" /INCREMENTAL /NOLOGO opencv_calib3d2410d.lib opencv_contrib2410d.lib opencv_core2410d.lib opencv_features2d2410d.lib opencv_flann2410d.lib opencv_gpu2410d.lib opencv_highgui2410d.lib opencv_imgproc2410d.lib opencv_legacy2410d.lib opencv_ml2410d.lib opencv_objdetect2410d.lib opencv_ts2410d.lib opencv_video2410d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\TC\Source\Repos\test\EarlyFireDetection\Debug\EarlyFireDetection.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\TC\Source\Repos\test\EarlyFireDetection\Debug\EarlyFireDetection.lib" /MACHINE:X86 Debug\colorModel.obj
+         Debug\ds.obj
+         Debug\fileStream.obj
+         Debug\fireBehaviorAnalysis.obj
+         Debug\main.obj
+         Debug\motionDetection.obj
+         Debug\opticalFlowTool.obj
+         EarlyFireDetection.vcxproj -> C:\Users\TC\Source\Repos\test\EarlyFireDetection\Debug\EarlyFireDetection.exe
+     1>專案 "C:\Users\TC\Source\Repos\test\EarlyFireDetection\EarlyFireDetection\EarlyFireDetection.vcxproj" (Build 目標) 建置完成。
+
+建置成功。
+
+經過時間 00:00:13.14

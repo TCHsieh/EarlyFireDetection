@@ -21,5 +21,40 @@
     <ClCompile Include="colorModel.cpp">
       <Filter>原始程式檔</Filter>
     </ClCompile>
+    <ClCompile Include="ds.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="fileStream.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="fireBehaviorAnalysis.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="motionDetection.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="opticalFlowTool.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="colorModel.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="ds.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="fileStream.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="fireBehaviorAnalysis.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="motionDetection.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="opticalFlowTool.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -83,7 +83,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="colorModel.cpp" />
+    <ClCompile Include="ds.cpp" />
+    <ClCompile Include="fileStream.cpp" />
+    <ClCompile Include="fireBehaviorAnalysis.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="motionDetection.cpp" />
+    <ClCompile Include="opticalFlowTool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="colorModel.h" />
+    <ClInclude Include="ds.h" />
+    <ClInclude Include="fileStream.h" />
+    <ClInclude Include="fireBehaviorAnalysis.h" />
+    <ClInclude Include="motionDetection.h" />
+    <ClInclude Include="opticalFlowTool.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
