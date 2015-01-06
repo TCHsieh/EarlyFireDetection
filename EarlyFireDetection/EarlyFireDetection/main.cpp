@@ -32,7 +32,7 @@
 #define ON (-1)
 #define OFF (-2)
 
-/* Debug */
+/* Debug Model */
 #define DEBUG_MODE (OFF)
 
 /* Background Subtraction */
