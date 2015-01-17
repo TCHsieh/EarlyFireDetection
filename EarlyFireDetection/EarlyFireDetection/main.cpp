@@ -118,27 +118,27 @@ deque< vector<feature> >
 ----------------
 |   --------   |
 |   |  f1  |   |
-|	|------|   |
-|	|  f2  |   |   <===   frame 1
-|	|------|   |
+|   |------|   |
+|   |  f2  |   |   <===   frame 1
+|   |------|   |
 |   |   .  |   |
 |   |   .  |   |
 |   |   .  |   |
 |   |------|   |
-|	|  fi  |   |
-|	|------|   |
+|   |  fi  |   |
+|   |------|   |
 ----------------
 |   --------   |
 |   |  f1  |   |
-|	|------|   |
-|	|  f2  |   |   <===   frame 2
-|	|------|   |
+|   |------|   |
+|   |  f2  |   |   <===   frame 2
+|   |------|   |
 |   |   .  |   |
 |   |   .  |   |
 |   |   .  |   |
 |   |------|   |
-|	|  fj  |   |
-|	|------|   |
+|   |  fj  |   |
+|   |------|   |
 ----------------
 .
 .
@@ -151,8 +151,7 @@ input:
 strd    : centroid of candiadate
 thrdcp  : threshold of contourpoints
 pwindows: processing windows0
-output:
-true or flase,legal or not
+output  : true or flase（legal or not）
 */
 bool checkContourPoints(Centroid & ctrd, const unsigned int thrdcp, const unsigned int pwindows) {
 
@@ -177,8 +176,7 @@ ofInfoFilePath: the file folder name
 ctrd          : centroid want to analysis
 frame         : current frame
 contour       : contour No. of each frame
-output:
-in the folder ofInfoFilePath
+output        : in the folder ofInfoFilePath
 */
 void writeContourPointsInfo(char ofInfoFileFolder[], Centroid & ctrd, const int frame, const int contour) {
 
@@ -194,7 +192,7 @@ void writeContourPointsInfo(char ofInfoFileFolder[], Centroid & ctrd, const int 
 	char tmp[100];
 
 	strcpy(tmp, ofInfoFileFolder);
-	strcat(tmp, "//[DetectedAt_%d][Frame_%d][Contour_%d].xls");
+	strcat(tmp, "\\[DetectedAt_%d][Frame_%d][Contour_%d].xls");
 
 	/* contour motion vector of each frame */
 	for (; itrDeq != ctrd.dOFRect.end(); ++itrDeq){
@@ -208,9 +206,7 @@ void writeContourPointsInfo(char ofInfoFileFolder[], Centroid & ctrd, const int 
 input:
 vecFeature : Contour Features
 orien      : accumulate array
-
-output:
-orien[4]
+output     : orien[4]
 */
 void motionOrientationHist(std::vector< Feature > & vecFeature, unsigned int orien[4]){
 
@@ -248,9 +244,7 @@ totalPoints: current frame
 output:
 staticCount: the feature counts who's energy is lower than 1.0
 totalPoints: the feature counts that energy is between 1.0 ~ 100.0
-
-return:
-energy
+return: energy
 */
 double getEnergy(std::vector< Feature > & vecFeature, unsigned int & staticCount, unsigned int & totalPoints){
 
@@ -279,8 +273,7 @@ double getEnergy(std::vector< Feature > & vecFeature, unsigned int & staticCount
 input:
 ctrd    : cadidate fire object
 pwindows: processing window
-return:
-fire-like or not
+return  : fire-like or not
 */
 bool checkContourEnergy(Centroid & ctrd, const unsigned int pwindows) {
 
