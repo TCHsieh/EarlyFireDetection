@@ -1,38 +1,38 @@
 /**
-* @ Purpose: Early Fire detection based on video sequences
+* @ Purpose: Early Fire Detection Based On Video Sequences
 *
 *
-* @ Auther: TC,Hsieh
+* @ Auther: TC, Hsieh
 * @ Date: 2014.05.03
 */
 
-/* Opencv library */
+/* OpenCV Library */
 #include "opencv/cv.h"
 #include "opencv/cxcore.h"
 #include "opencv/highgui.h"
 
-/* Self-developed library */
-#include "colorModel.h"
-#include "motionDetection.h"
-#include "fileStream.h"
+/* Self-Developed Library */
 #include "ds.h"
+#include "colorModel.h"
+#include "fileStream.h"
 #include "opticalFlowTool.h"
+#include "motionDetection.h"
 #include "fireBehaviorAnalysis.h"
 
-/* C-PlusPlus library */
+/* C-PlusPlus Library */
 #include <iostream> 
 
-/* STL library */
-#include <vector>
-#include <deque>
-#include <list>
+/* STL Library */
 #include <map>
+#include <list>
+#include <deque>
+#include <vector>
 
 /* Switch */
 #define ON (-1)
 #define OFF (-2)
 
-/* Debug Model */
+/* Debug Mode */
 #define DEBUG_MODE (OFF)
 
 /* Background Subtraction */
@@ -41,7 +41,7 @@
 /* Optical Flow Motion Vector */
 #define OFMV_DISPLAY (OFF)
 
-/* Halt while fire alarm */
+/* Halting While Fire Alarm */
 #define HALT_MODE (OFF)
 
 
@@ -49,31 +49,30 @@ using namespace std;
 using namespace cv;
 
 
-/* Non-named namespace(file only), global constants */
+/* Non-named namespace, global constants */
 namespace{
 
-	/* background */
+	/* Background Mode */
 #if defined (BGS_MODE) && (BGS_MODE == ON)
 	const int BGM_FRAME_COUNT = 20;
 #else
 	const int BGM_FRAME_COUNT = 0;
 #endif 
 
-
-	/* optical flow */
+	/* Optical Flow Parameters */
 	const int MAX_CORNERS = 10000;
 	const int WIN_SIZE = 5;
 
-	/* window size of frame */
+	/* Processing Window Size (Frame) */
 	const unsigned int PROCESSING_WINDOWS = 15;
 
-	/* background update */
+	/* Background Model Update Coeeficient */
 	const double ACCUMULATE_WEIGHTED_ALPHA_BGM = 0.1;
 	const double ACCUMULATE_WEIGHTED_ALPHA_THRESHOLD = 0.05;
 	const int THRESHOLD_COEEFICIENT = 5;
 
 
-	/* fire-like region threshold */
+	/* Fire-like Region Threshold */
 	const int RECT_WIDTH_THRESHOLD = 5;
 	const int RECT_HEIGHT_THRESHOLD = 5;
 	const int CONTOUR_AREA_THRESHOLD = 12;
@@ -82,13 +81,14 @@ namespace{
 }
 
 
+/* File Path (Resource and Results ) */
 namespace{
 
 	const char* InputVideoPath = "test.mp4";
 	const char* OutputVideoPath = "tout.avi";
 
-	const char* RectImgFilePath = "[Fire RectInfo][Rocket Engin]//[Frame_%d][DetectedAt_%d].bmp";         // rect image
-	const char* RectInfoFilePath = "[Fire RectInfo][Rocket Engin]//[Frame_%d][Rect_%d].xls";              // rect information
+	const char* RectImgFilePath = "[Fire RectInfo][Rocket Engin]\\[Frame_%d][DetectedAt_%d].bmp";         // rect image
+	const char* RectInfoFilePath = "[Fire RectInfo][Rocket Engin]\\[Frame_%d][Rect_%d].xls";              // rect information
 	char ofInfoFileFolder[100] = "[Fire OFInfo]";              // Optical Flow information
 
 
